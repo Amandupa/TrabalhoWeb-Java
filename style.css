@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.background {
+    background-image: url(https://static.vecteezy.com/ti/vetor-gratis/t2/13437202-fundo-de-desfoque-de-rosa-claro-e-azul-vetor.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: "Fjalla One";
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 8px;
+    background-color: rgb(39, 39, 255);
+}
+
+.logo img {
+    width: 140px;
+    height: auto;
+    margin-left: 5rem;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 10rem;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: rgb(52, 9, 121);
+    transition: 0.3s;
+    font-size: 20px;
+}
+
+.C-icon {
+    margin-right: 5rem;
+}
+
+.Icone ion-icon {
+    color: rgb(46, 0, 252);
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+ul li a:hover {
+    text-transform: capitalize;
+    color: rgb(47, 0, 255);
+    border-bottom: solid 1px;
+}
+
+hr {
+    border-bottom: solid 0.1px;
+    color: rgb(42, 24, 143);
+    margin-top: 15px;
+}
+
+header {
+    margin-top: 10rem;
+}
+
+header h1 {
+    color: rgb(13, 3, 102);
+    font-size: 3rem;
+}
+
+header p {
+    color: rgb(0, 163, 63);
+    list-style: 2rem;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+
+.botao1 a {
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #333;
+    border: 2px solid #333;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+    margin-top: 20px;
+}
+
+.botao1 a span {
+    position: relative;
+    z-index: 2;
+}
+
+.botao1 a:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #ff003b;
+    transition: all .35s;
+}
+
+.botao1 a:hover {
+    color: #fff;
+}
+
+.botao1 a:hover:after {
+    width: 100%;
+}
+
+h1.destaque {
+    margin-bottom: 25px;
+}
+
+h1.destaque span {
+    color: #ff0000;
+}
+
+
+img.img_ajuste {
+    object-fit: cover;
+    border-radius: 0px 8px 0 0;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    width: 1400px;
+    max-width: 100%;
+    margin: 10%;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+
+}
+
+.col-5 {
+    width: 41.65;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.31%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.3%;
+}
+
+.col-11 {
+    width: 91.63%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+[class*="col-"] {
+    float: left;
+    padding-right: 2px;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+footer {
+    background-color: rgb(78, 78, 78);
+    padding: 15px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+
+/*BANNER JOGOS*/
+.carousel {
+    height: 700px;
+    margin: 0%;
+}
+
+.carousel img {
+    height: 700px;
+    object-fit: cover;
+
+}
+
+
+/* BANNER JOGOS FIM */
+
+
+
+main h1 {
+    text-align: center;
+    align-items: center;
+    color: rgb(69, 116, 218);
+    font-size: 3rem;
+    padding-bottom: auto;
+    padding-top: auto;
+}
+
+main span {
+    color: rgb(31, 0, 102);
+}
+main .col-4:hover {
+    transform: scale(1.1);
+    transition: .3s;
+}
+main .col-4 img {
+    margin: 0%;
+    aspect-ratio: 8/8;
+    object-fit: contain;
+}
