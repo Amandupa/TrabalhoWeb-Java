@@ -58,7 +58,7 @@ ul li a {
 }
 
 .Icone ion-icon {
-    color: rgb(46, 0, 252);
+    color: rgb(255, 255, 255);
     font-size: 3rem;
     cursor: pointer;
 }
@@ -234,11 +234,9 @@ footer {
 
 .carousel img {
     height: 700px;
-    object-fit: cover;
+    object-fit: initial;
 
 }
-
-
 /* BANNER JOGOS FIM */
 
 
@@ -264,3 +262,35 @@ main .col-4 img {
     aspect-ratio: 8/8;
     object-fit: contain;
 }
+
+.banner {
+    width: 100%;
+    background:url(http://videira.ifc.edu.br/tecnico-informatica/wp-content/uploads/sites/18/2020/10/48996734533_4f4c0d1523_b_49024038957_o.jpg);
+    /*https://i0.wp.com/media.giphy.com/media/5ERaOy5fQEIAU/giphy.gif*/
+    background-size: cover;
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    padding: 50px 50rem;
+  }
+  
+  .big-text {
+    font-size: 130px;
+    font-weight:500;
+    animation-delay: 1s;
+  }
+  .banner a {
+    display: inline-block;
+    background: #fff;
+    color: #36465d;
+    text-transform: uppercase;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 40px;
+    transition: .3s;
+  }
+  .banner a:hover {
+    background: #333;
+    color: #fff;
+    padding: 15px 20px;
+  }
