@@ -40,6 +40,10 @@ nav {
     align-items: center;
     padding-top: 8px;
     background-color: rgb(39, 39, 255);
+    backdrop-filter: blur( 6px );
+    -webkit-backdrop-filter: blur( 6px );
+    background-color: rgba(0, 0, 0, 0.628);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
 .logo img {
@@ -51,17 +55,17 @@ nav {
 nav ul li:hover{
     transform: scale(1.15);
     transition: .2s;
-    color: #71c837;
+    color: #8e37c8;
 }
 
 
 nav ul:hover{
     transition: .2s;
-    color:#71c837;
+    color:#8e37c8;
 }
 
 li a:hover{
-    color:#71c837;
+    color: #8e37c8;;
     transition: .2s;
 }
 
@@ -180,7 +184,7 @@ img {
 .container {
     width: 1400px;
     max-width: 100%;
-    margin: 10%;
+    margin: 10% 0 0 10%;
 }
 
 .col-1 {
@@ -188,8 +192,7 @@ img {
 }
 
 .col-2 {
-    width: 16.66%;
-}
+    width: 16.66%;}
 
 .col-3 {
     width: 25%;
@@ -253,12 +256,12 @@ footer {
 
 
 /*BANNER JOGOS*/
-.carousel {
+#carousel {
     height: 700px;
     margin: 0%;
 }
 
-.carousel img {
+#carousel img {
     height: 700px;
     object-fit: cover;
     
@@ -274,8 +277,7 @@ main h1 {
     align-items: center;
     color: rgb(69, 116, 218);
     font-size: 3rem;
-    padding-bottom: auto;
-    padding-top: auto;
+    padding-top: 5px;
 }
 
 main span {
@@ -286,8 +288,7 @@ main .col-4:hover {
     transition: .3s;
 }
 main .col-4 img {
-    margin: 0%;
-    aspect-ratio: 8/8;
+    aspect-ratio: 8/9;
     object-fit: contain;
 }
 
@@ -305,16 +306,16 @@ main .col-4 img {
 }.texto .titulo{
     color: white;
     font-size: 60px;
-    font-weight: 600;
+    font-weight: 600px;
 }
 
-.texto .sub_titulo{
+.texto .subtitulo{
     color: white;
     font-size: 40px;
     font-weight: 600;
 
 }
-.texto .subsub_titulo{
+.texto .subsubtitulo{
     color: white;
     font-size: 20px;
     font-weight: 600;
@@ -322,21 +323,29 @@ main .col-4 img {
 
 }
 
-.texto .botoes{
-    margin-top: 30px;
-}
-
-.texto .botoes button{
-    height: 55px;
-    width: 170px;
-    border-radius: 5px;
-    border: 0;
-    margin: 0 10px;
-    font-size: 20px;
-    font-weight: 500;
-    padding: 0 10px;
+.btn {
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #ffffff;
+    background: transparent;
     cursor: pointer;
-    outline: none;
-    transition: 0.3s;
-
-}
+    transition: ease-out 0.5s;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #725AC1;
+  }
+  
+  .btn:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 0 #5134b1;
+  }
+  
+  .btn:active {
+    transform: scale(0.9);
+  }
