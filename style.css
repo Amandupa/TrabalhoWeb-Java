@@ -1,12 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 
+  @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Manrope:wght@300&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body::-webkit-scrollbar {
+    width: 17px;               
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #24153a;      
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #9f62e4;   
+    border-radius: 15px;  
+    border: 2px solid #2a265a;  
+  }
 
+  body {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Manrope', sans-serif;
+}
 .background {
     background-image: url(https://static.vecteezy.com/ti/vetor-gratis/t2/13437202-fundo-de-desfoque-de-rosa-claro-e-azul-vetor.jpg);
     background-repeat: no-repeat;
@@ -15,16 +33,10 @@
     width: 100%;
     height: 100vh;
 }
-
-body {
-    background-color: rgb(255, 255, 255);
-    font-family: "Fjalla One";
-}
-
 nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding-top: 8px;
     background-color: rgb(39, 39, 255);
@@ -36,22 +48,41 @@ nav {
     margin-left: 5rem;
 }
 
-ul {
-    list-style: none;
-    display: flex;
-    gap: 10rem;
+nav ul li:hover{
+    transform: scale(1.15);
+    transition: .2s;
+    color: #71c837;
 }
 
-ul li {
-    list-style: none;
+
+nav ul:hover{
+    transition: .2s;
+    color:#71c837;
 }
 
-ul li a {
+li a:hover{
+    color:#71c837;
+    transition: .2s;
+}
+
+nav ul li{
+    text-transform: uppercase;
+    transition: .2s;
+    display: inline-block;
+    line-height: 80px;
+    margin: 25px;
+    font-size: 25px;
+}
+nav ul li a{
+    color: white;
+    border-radius:4px;
     text-decoration: none;
-    color: rgb(52, 9, 121);
-    transition: 0.3s;
-    font-size: 20px;
 }
+
+ul:hover{
+    color: #71c837;
+}
+
 
 .C-icon {
     margin-right: 5rem;
@@ -61,12 +92,7 @@ ul li a {
     color: rgb(255, 255, 255);
     font-size: 3rem;
     cursor: pointer;
-}
-
-ul li a:hover {
-    text-transform: capitalize;
-    color: rgb(47, 0, 255);
-    border-bottom: solid 1px;
+    padding: 30px;
 }
 
 hr {
@@ -94,8 +120,8 @@ header p {
 
 .botao1 a {
     display: block;
-    width: 200px;
-    height: 40px;
+    width: 250px;
+    height: 45px;
     line-height: 40px;
     font-size: 18px;
     font-family: sans-serif;
@@ -121,7 +147,7 @@ header p {
     left: 0;
     width: 0;
     height: 100%;
-    background: #ff003b;
+    background: #CE2DDD;
     transition: all .35s;
 }
 
@@ -138,12 +164,12 @@ h1.destaque {
 }
 
 h1.destaque span {
-    color: #ff0000;
+    color: #CE2DDD;
 }
 
 
 img.img_ajuste {
-    object-fit: cover;
+    object-fit: fill;
     border-radius: 0px 8px 0 0;
 }
 
@@ -234,9 +260,11 @@ footer {
 
 .carousel img {
     height: 700px;
-    object-fit: initial;
-
+    object-fit: cover;
+    
 }
+
+
 /* BANNER JOGOS FIM */
 
 
@@ -263,34 +291,52 @@ main .col-4 img {
     object-fit: contain;
 }
 
-.banner {
-    width: 100%;
-    background:url(http://videira.ifc.edu.br/tecnico-informatica/wp-content/uploads/sites/18/2020/10/48996734533_4f4c0d1523_b_49024038957_o.jpg);
-    /*https://i0.wp.com/media.giphy.com/media/5ERaOy5fQEIAU/giphy.gif*/
+#banner2{
+    height: 80vh;
+    background: linear-gradient(rgba(0,0,0,0.281),rgba(0,0,0,0.308)), url(http://videira.ifc.edu.br/tecnico-informatica/wp-content/uploads/sites/18/2020/10/20191031_141250_49023916946_o.jpg);
     background-size: cover;
-    font-size: 80px;
-    color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 50px 50rem;
-  }
-  
-  .big-text {
-    font-size: 130px;
-    font-weight:500;
-    animation-delay: 1s;
-  }
-  .banner a {
-    display: inline-block;
-    background: #fff;
-    color: #36465d;
-    text-transform: uppercase;
-    padding: 10px;
-    text-decoration: none;
+
+}.texto .titulo{
+    color: white;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.texto .sub_titulo{
+    color: white;
     font-size: 40px;
-    transition: .3s;
-  }
-  .banner a:hover {
-    background: #333;
-    color: #fff;
-    padding: 15px 20px;
-  }
+    font-weight: 600;
+
+}
+.texto .subsub_titulo{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 6px;
+
+}
+
+.texto .botoes{
+    margin-top: 30px;
+}
+
+.texto .botoes button{
+    height: 55px;
+    width: 170px;
+    border-radius: 5px;
+    border: 0;
+    margin: 0 10px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 10px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+
+}
