@@ -96,7 +96,7 @@ ul:hover{
     color: rgb(255, 255, 255);
     font-size: 3rem;
     cursor: pointer;
-    padding: 30px;
+    padding: 10px;
 }
 
 hr {
@@ -184,7 +184,7 @@ img {
 .container {
     width: 1400px;
     max-width: 100%;
-    margin: 10% 0 0 10%;
+    margin: 10%
 }
 
 .col-1 {
@@ -283,13 +283,15 @@ main h1 {
 main span {
     color: rgb(31, 0, 102);
 }
-main .col-4:hover {
+main .col-3:hover {
     transform: scale(1.1);
     transition: .3s;
 }
-main .col-4 img {
-    aspect-ratio: 8/9;
+main .col-3 img {
+    aspect-ratio: 9/9;
     object-fit: contain;
+    margin: 10%; 
+
 }
 
 #banner2{
@@ -349,3 +351,9 @@ main .col-4 img {
   .btn:active {
     transform: scale(0.9);
   }
+
+  .footer h1{
+    display: flexbox;
+align-items: end;
+
+}
