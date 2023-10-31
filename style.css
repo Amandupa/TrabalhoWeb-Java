@@ -1,4 +1,3 @@
-
   @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Manrope:wght@300&display=swap');
 * {
     margin: 0;
@@ -380,7 +379,7 @@ form fieldset {
 form legend {
     font-weight: bold;
     color: #000000;
-    font-size: larger;
+    font-size: 100%;
     text-align: center;
 }
 
@@ -395,6 +394,8 @@ form legend {
     font-weight: bold;
     font-size: 14px;
 }
+
+
 
 input[type="text"],
 input[type="email"],
@@ -415,9 +416,7 @@ textarea {
     border: 1px solid #ccc;
     border-radius: 4px;
     resize: vertical;
-    /* Permite redimensionar verticalmente o textarea */
     height: 120px;
-    /* Altura inicial do textarea */
 }
 
 select {
@@ -436,15 +435,15 @@ button {
     border-radius: 4px;
     padding: 10px;
     cursor: pointer;
-    /* Adiciona um cursor de ponteiro */
 }
-
-/* Botão de Limpar */
 button[type="reset"] {
     background-color: #6c757d;
 }
 
-/* Botão de Enviar */
 button:hover {
     background-color: #0056b3;
+}
+nav .logo:hover {
+    transform: scale(1.1);
+    transition: .3s;
 }
