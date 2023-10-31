@@ -358,11 +358,12 @@ main .col-4 img {
     transform: scale(0.9);
   }
 
-  .footer h1{
-    display: flexbox;
-align-items: end;
-
+  .footer{
+    background-color: #29337B;
+    padding: 5rem 0 0 0;
 }
+
+
 
 /* Formulário */
 form {
