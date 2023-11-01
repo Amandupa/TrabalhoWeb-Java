@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/logoyop-removebg-preview.png" type="image/x-icon">
 
     <title>Inscreva-se</title>
     <script>
@@ -36,10 +38,10 @@
             var campoTurma = document.getElementById('Turma');
 
             if (campoAluno.value && campoMatricula.value && campoCPF.value && campoEmail.value && campoTurma.value) {
-                alert('formulario enviado com sucesso!')
+                alert('Formulário enviado com sucesso!')
                 local();
             } else {
-                alert('você deve preencher todos os campos')
+                alert('Você deve preencher todos os campos')
             }
         }
 
@@ -59,51 +61,47 @@
 
 <body>
     <div class="background">
-
         <nav>
             <div class="logo">
-                <img src="img/IFC_2014_logo.svg" alt="logo" class="img_ajuste">
+                <a href="index.html"><img src="img/IFC_2014_logo.svg" alt="logo" class="img_ajuste"></a>
             </div>
-
-            <div id="menu">
-
-                <ul>
-                    <li><a href="#banner3"> Maratona</a></li>
-                    <li><a href="#"> Jogos eletrônicos</a></li>
-                    <li><a href="#banner2"> Fotos</a></li>
-                    <li><a href="#opa"> Cronograma</a></li>
-                    <li><a href="login.html"> Orçamento</a></li>
-                </ul>
-            </div>
-
+            <ul class="links">
+                <li><a href="login.html"> Orçamento</a></li>
+                <li><a href="formulario.html">Inscreva-se</a></li>
+                <li><a href="index.html#carousel"> Jogos Eletrônicos</a></li>
+                <li><a href="index.html#banner2"> Fotos</a></li>
+            </ul>
         </nav>
-        <section class="container">
+        <section class="container clearfix">
             <form action="http://jkorpela.fi/cgi-bin/echo.cgi" onsubmit="return validarFormulario()">
                 <fieldset>
                     <legend>Inscreva-se</legend>
-    
+
                     <div class="input-container">
-                        <label for="Aluno">Nome do Aluno</label>
-                        <input type="text" name="Aluno" id="Aluno" placeholder="Seu nome" required autofocus>
+                        <label for="Aluno">Nome do Aluno:</label>
+                        <input type="text" name="Aluno" id="Aluno" placeholder="Nome do Aluno" required autofocus>
                     </div>
-    
-    
+
+
                     <div class="input-container">
-                        <label for="CPF">CPF</label>
+                        <label for="CPF">CPF:</label>
                         <input type="text" name="CPF" id="CPF" placeholder=" xxx.xxx.xxx-xx"
-                        pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}" required>
+                            pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}" required>
                     </div>
-    
+
                     <div class="input-container">
-                        <label for="email">email</label>
-                        <input type="email" name="email" id="email" placeholder="email" pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})$" required>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="Email do Aluno"
+                            pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})$"
+                            required>
                     </div>
-    
+
                     <div class="input-container">
-                        <label for="Matricula">Numero de matricula</label>
-                        <input type="text" name="Matricula" id="Matricula" placeholder="Seu numero de matricula" required>
+                        <label for="Matricula">Numero de matrícula:</label>
+                        <input type="text" name="Matricula" id="Matricula" placeholder="Número de matrícula do Aluno"
+                            required>
                     </div>
-    
+
                     <div class="input-container">
                         <label for="Turma">Turma</label>
                         <select name="Turma" id="Turma" required>
@@ -113,18 +111,29 @@
                             <option value="Info2-B">Info2-B</option>
                             <option value="Info3-A">Info3-A</option>
                             <option value="Info3-B">Info3-B</option>
-    
+                            <option value="Superior">Superior</option>
                         </select>
                     </div>
-    
+
                     <div class="actions">
-                        <button type="submit" data-button >Cadastrar</button>
+                        <button type="submit" data-button>Cadastrar</button>
                         <button type="reset">Limpar</button>
                     </div>
                 </fieldset>
             </form>
         </section>
+    </div>
+    <footer>
+        <div>
+            <h1>Caetano B. P., Amanda Scatolin, Lucas B. P.</h1>
+        </div>
+        <div>
+            <span>&copy;Todos os direitos reservados</span>
+        </div>
+        <div>
 
+        </div>
+    </footer>
 </body>
 
 
