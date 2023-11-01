@@ -57,7 +57,7 @@ function total() {
 
 
 function textomontar() {
-    gebi('text').value = ("Total de comida em reais foi " + totalali + ", e o Total de divulgação em reais foi " + totaldivu + ".  o Total de tudo que foi gasto é de R$" + total + ". Feito por Thiago e Leticia.");
+    gebi('text').value = ("Total de comida foi " + totalali + " reais" + ", e o Total de divulgação foi " + totaldivu + " reais" + ".  o Total de tudo que foi gasto é de R$" + total + ". Feito por Amanda Scatolin, Lucas Bogoni Prietto e Caetano Bogoni Prietto.");
 }
 
 
