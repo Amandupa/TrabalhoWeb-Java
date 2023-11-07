@@ -15,7 +15,6 @@
             numero.push(participantes);
             imprimir(numero);
         }
-
     </script>
 </head>
 
@@ -32,101 +31,102 @@
                 <li><a href="index.html#banner2"> Fotos</a></li>
             </ul>
         </nav>
-        <section class="container2">
-            <h1>Orçamento do SCI</h1><br>
-            <h2>Dados do evento:</h2>
+        <main>
+            <section class="container2">
+                <h1>Orçamento do SCI</h1><br>
+                <h2>Dados do evento:</h2>
+                Inscritos:<input type="number" id="numero_participantes" readonly><br>
 
-            Inscritos:<input type="number" id="numero_participantes" readonly><br>
+                <div>
+                    <h2>Alimentos:</h2>
+                    <table>
+                        <tr>
+                            <th>Produtos</th>
+                            <th>Quantidade</th>
+                            <th>Preço Unitário</th>
+                            <th>Total</th>
+                        </tr>
+                        <tr>
+                            <td>Café</td>
+                            <td><input type="number" id="n1"></td>
+                            <td><input type="number" id="n2" placeholder="R$"></td>
+                            <td><input type="text" readonly id="res1"></td>
+                        </tr>
+                        <tr>
+                            <td>Bolo</td>
+                            <td><input type="number" id="n3"></td>
+                            <td><input type="number" id="n4" placeholder="R$"></td>
+                            <td><input type="text" readonly id="res2"></td>
+                        </tr>
+                        <tr>
+                            <td>Hot Dog</td>
+                            <td><input type="number" id="n5"></td>
+                            <td><input type="number" id="n6" placeholder="R$"></td>
+                            <td><input type="text" readonly id="res3"></td>
+                        </tr>
+                    </table>
+                </div>
 
-            <div>
-                <h2>Alimentos:</h2>
-                <table>
-                    <tr>
-                        <th>Produtos</th>
-                        <th>Quantidade</th>
-                        <th>Preço Unitário</th>
-                        <th>Total</th>
-                    </tr>
-                    <tr>
-                        <td>Café</td>
-                        <td><input type="number" id="n1"></td>
-                        <td><input type="number" id="n2" placeholder="R$"></td>
-                        <td><input type="text" readonly id="res1"></td>
-                    </tr>
-                    <tr>
-                        <td>Bolo</td>
-                        <td><input type="number" id="n3"></td>
-                        <td><input type="number" id="n4" placeholder="R$"></td>
-                        <td><input type="text" readonly id="res2"></td>
-                    </tr>
-                    <tr>
-                        <td>Hot Dog</td>
-                        <td><input type="number" id="n5"></td>
-                        <td><input type="number" id="n6" placeholder="R$"></td>
-                        <td><input type="text" readonly id="res3"></td>
-                    </tr>
-                </table>
-            </div>
+                <div>
+                    <h2>Divulgação:</h2>
+                    <table>
+                        <tr>
+                            <th>Produtos</th>
+                            <th>Quantidade</th>
+                            <th>Preço Unitário</th>
+                            <th>Total</th>
+                        </tr>
+                        <tr>
+                            <td>Banner</td>
+                            <td><input type="number" id="n7"></td>
+                            <td><input type="number" id="n8" placeholder="R$"></td>
+                            <td><input type="text" readonly id="res4"></td>
+                        </tr>
+                        <tr>
+                            <td>Crachá</td>
+                            <td><input type="number" id="n9"></td>
+                            <td><input type="number" id="n10" placeholder="R$"></td>
+                            <td><input type="text" readonly id="res5"></td>
+                        </tr>
+                        <tr>
+                            <td>Camiseta</td>
+                            <td><input type="number" id="n11"></td>
+                            <td><input type="number" id="n12" placeholder="R$"></td>
+                            <td><input type="text" readonly id="res6"></td>
+                        </tr>
 
-            <div>
-                <h2>Divulgação:</h2>
-                <table>
-                    <tr>
-                        <th>Produtos</th>
-                        <th>Quantidade</th>
-                        <th>Preço Unitário</th>
-                        <th>Total</th>
-                    </tr>
-                    <tr>
-                        <td>Banner</td>
-                        <td><input type="number" id="n7"></td>
-                        <td><input type="number" id="n8" placeholder="R$"></td>
-                        <td><input type="text" readonly id="res4"></td>
-                    </tr>
-                    <tr>
-                        <td>Crachá</td>
-                        <td><input type="number" id="n9"></td>
-                        <td><input type="number" id="n10" placeholder="R$"></td>
-                        <td><input type="text" readonly id="res5"></td>
-                    </tr>
-                    <tr>
-                        <td>Camiseta</td>
-                        <td><input type="number" id="n11"></td>
-                        <td><input type="number" id="n12" placeholder="R$"></td>
-                        <td><input type="text" readonly id="res6"></td>
-                    </tr>
-                    
-                </table>
-            </div>
+                    </table>
+                </div>
 
-            <div>
-                <h2>Total de custos do evento:</h2>
-                <table>
-                    <tr>
-                        <th>Tipo</th>
-                        <th>Total</th>
-                    </tr>
-                    <tr>
-                        <td>Alimentos</td>
-                        <td><input type="text" readonly id="totalali"></td>
-                    </tr>
-                    <tr>
-                        <td>Divulgação</td>
-                        <td><input type="text" readonly id="totaldivu"></td>
-                    </tr>
-                    <tr>
-                        <td>Total</td>
-                        <td><input type="text" readonly id="total"></td>
-                    </tr>
-                </table>
-            </div>
-            <button input onclick="mult(), ali(), divu(), total()">Calcular</button><br><br>
-            <form action="https://api.headlessforms.cloud/api/v1/form/TmqQ0ch59B" id="calcForm" method="POST">
-                <input type="submit" value="Enviar"><br><br>
-                <textarea name="text" id="text" rows="25" cols="50"></textarea>
-            </form>
-            <button onclick="textomontar()">Montar o texto</button>
-        </section>
+                <div>
+                    <h2>Total de custos do evento:</h2>
+                    <table>
+                        <tr>
+                            <th>Tipo</th>
+                            <th>Total</th>
+                        </tr>
+                        <tr>
+                            <td>Alimentos</td>
+                            <td><input type="text" readonly id="totalali"></td>
+                        </tr>
+                        <tr>
+                            <td>Divulgação</td>
+                            <td><input type="text" readonly id="totaldivu"></td>
+                        </tr>
+                        <tr>
+                            <td>Total</td>
+                            <td><input type="text" readonly id="total"></td>
+                        </tr>
+                    </table>
+                </div>
+                <button input onclick="mult(), ali(), divu(), total()">Calcular</button><br><br>
+                <form action="https://api.headlessforms.cloud/api/v1/form/TmqQ0ch59B" id="calcForm" method="POST">
+                    <input type="submit" value="Enviar"><br><br>
+                    <textarea name="text" id="text" rows="25" cols="50"></textarea>
+                </form>
+                <button onclick="textomontar()">Montar o texto</button>
+            </section>
+        </main>
     </div>
     <footer>
         <div>
