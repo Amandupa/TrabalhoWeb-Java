@@ -54,10 +54,8 @@ function total() {
     gebi("total").value = ("R$" + total)
 }
 
-
-
 function textomontar() {
-    gebi('text').value = ("Total de comida foi " + totalali + " reais" + ", e o Total de divulgação foi " + totaldivu + " reais" + ".  o Total de tudo que foi gasto é de R$" + total + ". Feito por Amanda Scatolin, Lucas Bogoni Prietto e Caetano Bogoni Prietto.");
+    gebi('text').value = ("Total de comida em reais foi " + totalali + ", e o Total de divulgação em reais foi " + totaldivu + ".  o Total de tudo que foi gasto é de R$" + total + ". Feito por Amanda, Caetano e Lucas.");
 }
 
 
@@ -80,12 +78,9 @@ function validarFormulario() {
     } incrementarInscritos();
 
     // Exibir mensagem de sucesso
-    alert('Inscrição efetuada com sucesso!');
+    alert('Login foi enviado com sucesso!');
     return true; // Permite o envio do formulário
 }
-
-
-
 window.onload = function recupera() {
     // Verifica se o localStorage possui o item com a chave "total_inscritos"
     if (localStorage.getItem("total_inscritos")) {
